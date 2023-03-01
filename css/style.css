@@ -20,31 +20,39 @@ img {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
     /* debug */
+    background-color: aqua;
     height: var(--debug-height);
 }
 
 .ms_main {
     height: 100vh;
+    width: 100%;
+    border: 3px solid black;
 }
 
 .ms_sidebar {
+    background-image: url(/img/sidebar-bg.png);
     padding-top: var(--debug-height);
 
 }
 
 .ms_content {
     overflow-y: auto;
-    padding-top: var(--debug-height);
+    height: 100%;
 }
 
 .ms_content-top {
-
+    padding: var(--debug-height) 0 2rem;
+    background-color: #1B72E8;
+    color: white;
 }
 
 .ms_content-bottom {
     height: 100%;
-    display: flex
+    display: flex;
+    padding: 2rem 0;
 
 }
 
@@ -61,4 +69,4 @@ img {
     display: inline-block;
     width: 2rem;
     height: 2rem;
-
+}
