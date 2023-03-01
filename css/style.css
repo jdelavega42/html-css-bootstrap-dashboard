@@ -5,9 +5,10 @@ img {
 
 /* !ROOT */
 :root {
-    --debug-height: 200px;
-    --debug-width: 200px;
+    --debug-height: 100px;
+    --debug-width: 100px;
 }
+
 /* !COMMON */
 .ms_wrapper {
     height: 100vh;
@@ -15,7 +16,7 @@ img {
 }
 
 .ms_header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -24,10 +25,40 @@ img {
 }
 
 .ms_main {
-    height: calc(100% - var(--debug-height));
-    padding-top: var(--debug-height);
+    height: 100vh;
 }
 
 .ms_sidebar {
-    height: 100%;
+    padding-top: var(--debug-height);
+
 }
+
+.ms_content {
+    overflow-y: auto;
+    padding-top: var(--debug-height);
+}
+
+.ms_content-top {
+
+}
+
+.ms_content-bottom {
+    height: 100%;
+    display: flex
+
+}
+
+/* !MAIN */
+/* @sidebar */
+
+/* @container-bottom */
+/* #class */
+
+.ms_class::before {
+    content: '';
+    background-image: url(/img/class-avatar.jpg);
+    background-size: 2rem 2rem;
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+

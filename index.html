@@ -16,9 +16,10 @@
     <div class="ms_wrapper">
         <!-- !HEADER -->
         <header class="ms_header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">Navbar</a>
+                  <a class="navbar-brand" href="#"><img src="img/mobile-logo.png" alt="small-logo" height="50"></a>
+                  <input class="#" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -57,22 +58,95 @@
         <!-- !/HEADER -->
 
         <!-- !MAIN -->
-        <main ms_main>
-            <div class="ms_sidebar">
-                <div class="d-flex flex-column">
-                    <a href="#" class="d-block text-decoration-none"><img src="img/mobile-logo.png" alt=""></a>
+        <main class="ms_main row">
+            <div class="ms_sidebar col-auto">
+                <div class="d-flex flex-column" role="navigation">
                     <ul class="nav nav-pills nav flush flex-column mb-auto text-center">
                         <li class="nav-item"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
                         <li class="nav-item"><a href="#"><i class="fa-solid fa-chart-simple"></i>Stats</a></i></li>
                         <li class="nav-item"><a href="#"><i class="fa-solid fa-signal"></i>Signals</a></li>
-                        <li class="nav-item"><a href="#"><i class="fa-solid fa-gear"></i>Admin</a></li>
+                        <li class="nav-item flex-grow-1"><a href="#"><i class="fa-solid fa-gear"></i>Admin</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="ms_content">
+            <div class="ms_content col">
+                <div class="ms_content-top row justify-content-center flex-md-row-reverse gap-3">
+                    <div class="col-12  col-md-4 row">
+                        <div class="col">lorem</div>
+                    </div>
+                    <div class="row flex-column col-12 col-md-8 gap-3">
+                        <div class="col">ipsum</div>
+                        <div class="col">dolor</div>
+                    </div>
 
+                </div>
+                <div class="ms_content-bottom row justify-content-center gap-3">
+                    <div class="col12 col-lg-8 row flex-column gap-3">
+                        <!-- #class -->
+                        <div class="col">
+                            <h2>Prossime classi</h2>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Data inizio</th>
+                                    <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                                    <th scope="col" class="d-none d-md-table-cell">Stato</th>
+                                    <th scope="col">Azioni</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="ms_class">Classe 90</td>
+                                    <td>25 Gen 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td class="d-none d-md-table-cell"><span class="text-bg-success rounded p-1">Done</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="ms_class">Classe 90</td>
+                                    <td>25 Gen 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td class="d-none d-md-table-cell"><span class="text-bg-success rounded p-1">Done</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="ms_class">Classe 90</td>
+                                    <td>25 Gen 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td class="d-none d-md-table-cell"><span class="text-bg-success rounded p-1">Done</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  <tr>
+                                    <td class="ms_class">Classe 90</td>
+                                    <td>25 Gen 2023</td>
+                                    <td class="d-none d-md-table-cell">20%</td>
+                                    <td class="d-none d-md-table-cell"><span class="text-bg-success rounded p-1">Done</span></td>
+                                    <td>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-pen"></i></button>
+                                        <button type="button" class="btn btn-light"><i class="fa-solid fa-trash"></i></button></td>
+                                  </tr>
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col">ipsum</div>
+                    </div>
+                    <div class="col12 col-lg-4 row flex-column gap-3">
+                        <div class="col">dolor</div>
+                        <div class="col">sit</div>
+                    </div>
+
+
+                    
+                </div>
             </div>
-
         </main>
         <!-- !/MAIN -->
     </div>
