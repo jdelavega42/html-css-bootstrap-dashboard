@@ -1,0 +1,33 @@
+/* !RESET */
+img {
+    width: 100%;
+}
+
+/* !ROOT */
+:root {
+    --debug-height: 200px;
+    --debug-width: 200px;
+}
+/* !COMMON */
+.ms_wrapper {
+    height: 100vh;
+    position: relative;
+}
+
+.ms_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* debug */
+    height: var(--debug-height);
+}
+
+.ms_main {
+    height: calc(100% - var(--debug-height));
+    padding-top: var(--debug-height);
+}
+
+.ms_sidebar {
+    height: 100%;
+}
