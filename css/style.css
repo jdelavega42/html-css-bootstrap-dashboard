@@ -82,15 +82,25 @@ li {
     text-decoration: none;
 }
 
+#bell {
+    color: #FF8F00;
+}
+
 /* #hover */
 .ms_sidebar li:hover {
     background-color: rgba(255, 255, 255, .2);
 }
 
-#bell {
-    color: #FF8F00;
+
+/* @container-top */
+.ms_btn {
+    height: 40px;
+    width: 40;
 }
 
+.badge {
+    background-color: #165BBA;
+}
 /* @container-bottom */
 /* #class */
 .ms_class::before {
