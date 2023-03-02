@@ -36,7 +36,14 @@
                             <li class="d-none d-md-inline"><i class="fa-solid fa-ellipsis-vertical"></i></li>
                             <li></li>
                         </ul>
-                        <a id="bell" href=""><i class="fa-solid fa-bell"></i></a>
+                        <div class="dropstart">
+                            <a id="bell" href="" data-bs-toggle="dropdown"><i class="fa-solid fa-bell"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item">Profilo</li>
+                                <li class="dropdown-item">Fatturazione</li>
+                                <li class="dropdown-item">Logout</li>
+                            </ul>
+                        </div>
 
                     </div>
 
@@ -54,23 +61,95 @@
                     <li class="py-3"><a href="#"><i class="fa-solid fa-chart-simple"></i><span class="d-none d-md-inline ps-1">Stats</span></a></li>
                     <li class="py-3"><a href="#"><i class="fa-solid fa-signal"></i><span class="d-none d-md-inline ps-1">Signals</span></a></li>
                 </ul>
-                <div class="dropdown text-center py-3">
-                    <a href="#" class="dropdown-toggle" id="dropdownuser"><i class="fa-solid fa-gear"></i><span class="d-none d-md-inline ps-1">Admin</span></a>
+                <div class="dropup text-center py-3">
+                    <a id="dropup"  href="#" data-bs-toggle="dropdown" class="dropdown-toggle"><i class="fa-solid fa-gear"></i><span class="d-none d-md-inline ps-1">Admin</span></a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item">Settings</li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="dropdown-item">Sign out</li>
+                    </ul>
                 </div>
-                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownuser" data-bs-toggle="dropdown" aria-expanded="false">
-                    <li class="dropdown-item">Settings</li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li class="dropdown-item">Sign out</li>
-                </ul>
             </div>
-            <!-- @Container -->
+            <!-- @Content -->
             <div class="ms_content container-fluid">
+                <!-- #content-top -->
                 <div class="ms_content-top row justify-content-between flex-md-row-reverse">
-                    <!-- #container-top -->
                     <div class="col-12  col-md-3 row p-4">
                         <div class="col d-flex align-items-baseline">
                             <p class="me-3">Nuovo Studente</p>
-                            <button class="btn btn-outline-light ms_btn"><i class="fa-solid fa-plus"></i></button>
+                            <button class="btn btn-outline-light ms_btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><i class="fa-solid fa-plus"></i></button>
+                            <!-- #offcanvas -->
+                            <div class="offcanvas offcanvas-end text-secondary show" tabindex="-1" id="offcanvas">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <form action="#" class="p-3">
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <label for="name" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="name">
+                                        </div>
+                                        <div class="col">
+                                            <label for="surname" class="form-label">Cognome</label>
+                                            <input type="text" class="form-control" id="surname">
+                                        </div>
+                                    </div>
+                                    <div class="row g-3">
+                                        <div class="col">
+                                            <label for="email" class="form-label">Email</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="basic-addon1">@</span>
+                                                <input type="email" class="form-control" id="email">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password">
+                                        </div>
+                                        <div class="col">
+                                            <label for="address" class="form-label">Indirizzo</label>
+                                            <input type="text" class="form-control" id="address">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label for="city" class="form-label">Città</label>
+                                                <input type="text" class="form-control" id="city">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="country" class="form-label">Stato</label>
+                                                <select class="form-select" id="country">
+                                                    <option selected>Altro</option>
+                                                    <option value="1">Austria</option>
+                                                    <option value="2">Italia</option>
+                                                    <option value="3">Filippine</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-2">
+                                                <label for="cap" class="form-label">CAP</label>
+                                                <input type="number" class="form-control" id="cap">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <label for="file">Foto</label>
+                                            <div class="input-group">
+                                                <input type="file" class="form-control" id="file">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                                <label class="form-check-label" for="invalidCheck">Seleziona per proseguire</label>
+                                                <div class="invalid-feedback">Accetta per proseguire.</div>
+                                            </div>
+                                            <div class="col-12">
+                                                <button class="btn btn-primary" type="submit">Salva</button>
+                                                <button class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <div class="row flex-column flex-md-row col-12 col-md-9 justify-content-between">
@@ -93,8 +172,8 @@
                             <p class="fs-1">125</p>
                         </div>
                     </div>
-
                 </div>
+                <!-- #content-bottom -->
                 <div class="ms_content-bottom row justify-content-center gap-4">
                     <div class="col12 col-lg-8 row flex-column">
                         <!-- #class -->

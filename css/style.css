@@ -42,6 +42,7 @@ li {
 
 .ms_content {
     overflow-y: auto;
+    overflow-x: hidden;
     height: 100%;
 }
 
@@ -62,7 +63,6 @@ li {
     :root {
         --debug-width: 7rem;
     }
-    
 }
 
 /* !HEADER */
@@ -92,7 +92,7 @@ li {
 }
 
 
-/* @container-top */
+/* @content-top */
 .ms_btn {
     height: 40px;
     width: 40;
@@ -101,7 +101,18 @@ li {
 .badge {
     background-color: #165BBA;
 }
-/* @container-bottom */
+
+/* #offcanvas */
+.ms_content .offcanvas {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .ms_content .offcanvas {
+        width: 50%;
+    }
+}
+/* @content-bottom */
 /* #class */
 .ms_class::before {
     content: '';
