@@ -3,20 +3,21 @@ img {
     width: 100%;
 }
 
+
 /* !ROOT */
 :root {
-    --debug-height: 100px;
-    --debug-width: 100px;
+    --debug-height: 3.5rem;
+    --debug-width: 3.5rem;
+    --sidebar-bg: #051E34;
 }
 
 /* !COMMON */
+/* @Layout */
 .ms_wrapper {
     height: 100vh;
-    position: relative;
 }
 
 .ms_header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -27,15 +28,15 @@ img {
 }
 
 .ms_main {
-    height: 100vh;
+    height: calc(100vh - var(--debug-height));
     width: 100%;
-    border: 3px solid black;
 }
 
 .ms_sidebar {
+    background-color: var(--sidebar-bg);
     background-image: url(/img/sidebar-bg.png);
-    padding-top: var(--debug-height);
-
+    width: var(--debug-width);
+    
 }
 
 .ms_content {
@@ -44,7 +45,6 @@ img {
 }
 
 .ms_content-top {
-    padding: var(--debug-height) 0 2rem;
     background-color: #1B72E8;
     color: white;
 }
@@ -53,12 +53,28 @@ img {
     height: 100%;
     display: flex;
     padding: 2rem 0;
+    
+}
 
+/* @media query */
+@media screen and (min-width: 768px) {
+    :root {
+        --debug-width: 7rem;
+    }
+    
 }
 
 /* !MAIN */
 /* @sidebar */
+.ms_sidebar a {
+    color: white;
+    text-decoration: none;
+}
 
+/* #hover */
+.ms_sidebar li:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
 /* @container-bottom */
 /* #class */
 
