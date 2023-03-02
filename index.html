@@ -17,7 +17,31 @@
         <!-- !HEADER -->
         <!-- @Header -->
         <header class="ms_header">
+            <div class="container-fluid">
+                <nav class="row navbar">
+                    <div class=" col-auto navbar-brand">
+                        <img class="mobile d-md-none" src="img/mobile-logo.png" alt="mobile-logo">
+                        <img class="desktop d-none d-md-inline" src="img/logo.svg" alt="">
+                    </div>
+                    <div class="col navbar-nav">
+                        <div class="input-group">
+                            <div class="input-group-text" id="search-bar"><i class="fa-solid fa-magnifying-glass"></i></div>
+                            <input type="text" class="form-control search-bar" placeholder="Prova a cercare: Lezioni di Laravel" aria-describedby="search-bar">
+                          </div>
+                    </div>
+                    <div class="col-auto d-flex">
+                        <ul class="d-flex gap-3">
+                            <li class="d-none d-md-inline"><i class="fa-solid fa-list"></i></li>
+                            <li class="d-none d-md-inline"><i class="fa-solid fa-circle-question"></i></li>
+                            <li class="d-none d-md-inline"><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            <li></li>
+                        </ul>
+                        <a id="bell" href=""><i class="fa-solid fa-bell"></i></a>
 
+                    </div>
+
+                </nav>
+            </div>
         </header>
         <!-- !/HEADER -->
 

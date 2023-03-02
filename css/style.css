@@ -3,7 +3,9 @@ img {
     width: 100%;
 }
 
-
+li {
+    list-style-type: none;
+}
 /* !ROOT */
 :root {
     --debug-height: 3.5rem;
@@ -23,7 +25,6 @@ img {
     width: 100%;
     z-index: 999;
     /* debug */
-    background-color: aqua;
     height: var(--debug-height);
 }
 
@@ -64,6 +65,16 @@ img {
     
 }
 
+/* !HEADER */
+/* @Navbar */
+.navbar-brand .mobile {
+    width: 2.5rem;
+}
+.navbar-brand .desktop {
+    width: 7rem;
+}
+
+
 /* !MAIN */
 /* @sidebar */
 .ms_sidebar a {
@@ -75,9 +86,13 @@ img {
 .ms_sidebar li:hover {
     background-color: rgba(255, 255, 255, .2);
 }
+
+#bell {
+    color: #FF8F00;
+}
+
 /* @container-bottom */
 /* #class */
-
 .ms_class::before {
     content: '';
     background-image: url(/img/class-avatar.jpg);
