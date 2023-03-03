@@ -122,6 +122,9 @@ li {
     display: inline-block;
     width: 2rem;
     height: 2rem;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: .5rem;
 }
 
 /* .ms_class {
