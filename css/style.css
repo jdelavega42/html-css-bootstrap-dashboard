@@ -112,6 +112,7 @@ li {
         width: 50%;
     }
 }
+
 /* @content-bottom */
 /* #class */
 .ms_class::before {
@@ -121,4 +122,12 @@ li {
     display: inline-block;
     width: 2rem;
     height: 2rem;
+}
+
+/* .ms_class {
+
+} */
+
+span.text-bg-warning {
+    color: white!important;
 }
